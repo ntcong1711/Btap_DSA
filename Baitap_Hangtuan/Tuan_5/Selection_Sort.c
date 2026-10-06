@@ -18,9 +18,13 @@ int main() {
         if (idx != i) {
             swap(&A[i], &A[idx]);
         }
+        for (int i = 0; i < 13; i++) {
+            printf("%d ", A[i]);
+        }
+        printf("\n");
     }
 
-    printf("Dãy mới là: ");
+    printf("Dãy sau khi xắp sếp là: ");
     for (int i = 0; i < 13; i++) {
         printf("%d ", A[i]);
     }
