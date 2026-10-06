@@ -17,9 +17,13 @@ int main() {
                 break;
             }
         }
+        for (int i = 0; i < 8; i++) {
+            printf("%d ", A[i]);
+        }
+        printf("\n");
     }
 
-    printf("Dãy mới là: ");
+    printf("Dãy sau khi sắp xếp là: ");
     for (int i = 0; i < 8; i++) {
         printf("%d ", A[i]);
     }

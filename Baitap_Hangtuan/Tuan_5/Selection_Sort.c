@@ -24,7 +24,7 @@ int main() {
         printf("\n");
     }
 
-    printf("Dãy sau khi xắp sếp là: ");
+    printf("Dãy sau khi sắp xếp là: ");
     for (int i = 0; i < 13; i++) {
         printf("%d ", A[i]);
     }
