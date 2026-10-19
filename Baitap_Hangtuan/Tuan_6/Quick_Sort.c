@@ -6,15 +6,20 @@ void swap(int *a, int *b) {
 }
 
 int quick_sort (int A[], int n, int i, int j  ){
-    int pivot = 0;
+    int pivot = 0;   // xử lý thêm pivot
     i = pivot + 1;
     j = pivot + n - 1;
     int ix = i;
     int jx = j; 
     while (ix < jx ){
-    for (int a = ix; a<n; a++){
+    int c = -1;
+    int d;  
+    for (int a = ix; a<n; a++){ 
+        c ++;
+        d = c;
         if (A[a] > A[pivot]){
         ix = a;
+        c = -1;
         break;
         }
     }
@@ -27,9 +32,9 @@ int quick_sort (int A[], int n, int i, int j  ){
         swap(&A[ix], &A[jx]);
     }
     else{
-        swap(&A[ix], &A[pivot]);
+        swap(&A[ix-d], &A[pivot]);
     }
-    
+    // ........
     }
 }
 
@@ -38,6 +43,6 @@ int quick_sort (int A[], int n, int i, int j  ){
 int main() {
     int A[13] = {101, 23, 57, 13, 25, 121, 87, 36, 13, 204, 111, 89, 59};
 
-    
+    // ..........
 return 0;
 }
