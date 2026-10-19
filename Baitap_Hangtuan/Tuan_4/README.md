@@ -39,7 +39,7 @@ Chuyen dia 1 tu B sang C
 Input:
 Nhap so luong dia: 3
 Output:
-Chuyen dia 1 tu A sang C 
+Chuyen dia 1 tu A sang C
 Chuyen dia 2 tu A sang B 
 Chuyen dia 1 tu C sang B 
 Chuyen dia 3 tu A sang C 
