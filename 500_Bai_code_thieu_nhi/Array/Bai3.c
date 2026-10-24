@@ -16,7 +16,7 @@ void find_duplicate_element(int num[], int n){
                 j--;
                 // Kiểm tra và lưu vào mảng kết quả
                 int is_exist = 0;
-                for (int n = 0; n<=a; n++) {
+                for (int n = 0; n<a; n++) {
                     if (result[n] == num[i]) {
                         is_exist = 1;
                         break;
