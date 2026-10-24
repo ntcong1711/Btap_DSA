@@ -103,12 +103,3 @@ Thuật toán này sẽ xét tất cả các cặp phần tử có thể có tro
 
   Giải thích: Không có giá trị nào xuất hiện hơn 1 lần trong mảng nên kết quả in ra là mảng rỗng `{}`.
 
-### Test Case 4: Các phần tử trùng lặp có giá trị âm
-* **Đầu vào (Input):**
-  * Mảng `nums`: `-1, -3, -1, 2, -3, 5, -1`
-* **Đầu ra (Output):**
-  ```text
-  These duplicate element in the array:{-1,-3}
-  ```
-
-  Giải thích: Giá trị `-1` xuất hiện 3 lần và `-3` xuất hiện 2 lần, nên chương trình in ra `{ -1, -3 }`.
