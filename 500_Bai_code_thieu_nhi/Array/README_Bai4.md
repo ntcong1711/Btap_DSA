@@ -37,8 +37,7 @@ Ví dụ:
 - Tiếp tục xét các phần tử còn lại, nếu có trùng lặp thì xóa tiếp.
 - Kết quả cuối cùng được in ra dưới dạng mảng còn lại sau khi loại bỏ các phần tử trùng lặp.
 
-### Độ phức tạp của thuật toán
-
+Độ phức tạp của thuật toán
 - Thời gian: O(n³) trong trường hợp xấu nhất, vì mỗi lần xóa phần tử phải dịch chuyển các phần tử phía sau, và quá trình này xảy ra nhiều lần trong các vòng lặp lồng nhau.
 - Bổ nhớ: O(1) vì không cần mảng phụ để lưu kết quả trung gian.
 
@@ -66,27 +65,7 @@ Ví dụ:
 
   Giải thích: Không có cặp phần tử nào giống nhau, nên mảng sau khi xử lý giữ nguyên trạng thái ban đầu.
 
-### Test Case 3: Mảng có nhiều cặp giá trị lặp lại
-* **Đầu vào (Input):**
-  * Mảng `nums`: `1, 2, 1, 3, 2, 4`
 
-* **Đầu ra (Output):**
-  ```text
-  The largest subarray:{1,2,3,4}
-  ```
-
-  Giải thích: Các phần tử `1` và `2` xuất hiện lặp lại, nên chương trình sẽ xóa các bản sao và giữ lại các phần tử còn lại theo thứ tự xuất hiện ban đầu.
-
-### Test Case 4: Mảng có các phần tử lặp lặp nhiều lần
-* **Đầu vào (Input):**
-  * Mảng `nums`: `5, 5, 6, 7, 7, 8`
-
-* **Đầu ra (Output):**
-  ```text
-  The largest subarray:{5,6,7,8}
-  ```
-
-  Giải thích: Khi gặp giá trị trùng lặp, chương trình xóa phần tử bị lặp và dịch các phần tử sau lên, cuối cùng tạo ra mảng còn lại không chứa giá trị lặp thứ hai.
 
 
 
