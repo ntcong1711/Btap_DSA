@@ -65,20 +65,8 @@ Thuật toán này xét tất cả các cặp số trong mảng, không bỏ só
 
   Giải thích: Tích lớn nhất có thể tạo ra là `4 * 5 = 20`.
 
-### Test Case 3: Mảng có số âm và số dương
-* **Đầu vào (Input):**
-  * Mảng `nums`: `-8, 2, 5, -3, 10`
-* **Đầu ra (Output):**
-  ```text
-  Pais have maximum product: (-8, -3)
-  ```
 
-  Giải thích: Cặp `(-8, -3)` cho tích `24`, lớn hơn các tích khác như `2 * 10 = 20`, `5 * 10 = 50`, nhưng `(-8) * (-3) = 24` không phải lớn nhất. Cặp `5 * 10 = 50` là lớn hơn, nên kết quả thực tế là:
-  ```text
-  Pais have maximum product: (5, 10)
-  ```
-
-### Test Case 4: Mảng chỉ có 1 phần tử
+### Test Case 3: Mảng chỉ có 1 phần tử
 * **Đầu vào (Input):**
   * Mảng `nums`: `7`
 * **Đầu ra (Output):**
@@ -88,39 +76,3 @@ Thuật toán này xét tất cả các cặp số trong mảng, không bỏ só
 
   Giải thích: Vì bài toán yêu cầu tìm tích của 2 số trong mảng nên mảng phải có ít nhất 2 phần tử.
 
-### Test Case 5: Có nhiều cặp cùng tích lớn nhất với số âm
-* **Đầu vào (Input):**
-  * Mảng `nums`: `-2, -5, 3, 4, -1`
-* **Đầu ra (Output):**
-  ```text
-  Pais have maximum product: (-2, -5) and (3, 4)
-  ```
-
-  Giải thích:
-  * `(-2) * (-5) = 10`
-  * `3 * 4 = 12`
-  * `(-1) * (-5) = 5`
-  * `(-2) * 4 = -8`
-
-  Trong trường hợp này, tích lớn nhất thực tế là `12` từ cặp `(3, 4)`. Nếu muốn minh họa trường hợp nhiều cặp lớn nhất, ta có thể dùng mảng khác như:
-  * `nums = {-3, -2, 4, 5}`
-  * tích lớn nhất là `12` từ `(-3, -4)` không có; vì vậy không phù hợp.
-
-  Do đó, với dữ liệu trên, đáp án đúng là:
-  ```text
-  Pais have maximum product: (3, 4)
-  ```
-
-### Test Case 6: Mảng có số 0
-* **Đầu vào (Input):**
-  * Mảng `nums`: `0, 3, 8, -2, 5`
-* **Đầu ra (Output):**
-  ```text
-  Pais have maximum product: (3, 8)
-  ```
-
-  Giải thích: Tích lớn nhất là `3 * 8 = 24`.
-
-### Kết luận
-
-Thuật toán duyệt hết tất cả các cặp là cách tiếp cận đơn giản, dễ hiểu và phù hợp với các bài tập Cơ bản về mảng, đặc biệt khi tập dữ liệu không quá lớn. Nó cho phép kiểm tra chính xác từng cặp số và tìm ra kết quả tối ưu theo yêu cầu của bài toán.
