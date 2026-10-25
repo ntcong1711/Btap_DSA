@@ -82,41 +82,7 @@ Sau đó chương trình chia `Z` thành hai phần để hiển thị:
   - Sau khi ghép và sắp xếp lại, mảng kết quả là `{1, 2, 3, 4, 7, 8, 9, 10}`.
   - Chương trình chia kết quả thành hai phần theo `m = 5` phần tử đầu và phần còn lại.
 
-### Test Case 2: Mảng `Y` có nhiều phần tử hơn `X`
-
-* **Đầu vào (Input):**
-  * `X[] = {1, 3, 5}`
-  * `Y[] = {2, 4, 6, 8}`
-
-* **Đầu ra (Output):**
-  ```text
-  X[] = { 1, 2, 3 }
-  Y[] = { 4, 5, 6, 8 }
-  ```
-
-* **Giải thích:**
-  - `X` và `Y` đều là mảng đã sắp xếp.
-  - Kết quả sau khi hợp nhất là `{1, 2, 3, 4, 5, 6, 8}`.
-  - Chương trình in ra 3 phần tử đầu thuộc `X[]` và phần còn lại thuộc `Y[]`.
-
-### Test Case 3: Hai mảng có giá trị chồng lẫn nhau
-
-* **Đầu vào (Input):**
-  * `X[] = {2, 5, 8, 11}`
-  * `Y[] = {1, 3, 7, 9}`
-
-* **Đầu ra (Output):**
-  ```text
-  X[] = { 1, 2, 3, 5 }
-  Y[] = { 7, 8, 9, 11 }
-  ```
-
-* **Giải thích:**
-  - Một số giá trị của hai mảng trùng lặp và chồng lẫn nhau về thứ tự.
-  - Sau khi thực hiện thuật toán merge, ta nhận được mảng đã sắp xếp tăng dần.
-  - Chương trình chỉ in ra 4 phần tử đầu của kết quả trong `X[]` và 4 phần tử còn lại trong `Y[]`.
-
-### Test Case 4: Một mảng rỗng
+### Test Case 2: Một mảng rỗng
 
 * **Đầu vào (Input):**
   * `X[] = {}`
@@ -132,7 +98,7 @@ Sau đó chương trình chia `Z` thành hai phần để hiển thị:
   - Nếu `X` rỗng thì ta chỉ cần copy toàn bộ phần tử của `Y` sang `Z`.
   - Chương trình vẫn thực hiện đúng và in ra kết quả hợp nhất.
 
-### Test Case 5: Mảng có phần tử trùng nhau
+### Test Case 3: Mảng có phần tử trùng nhau
 
 * **Đầu vào (Input):**
   * `X[] = {1, 2, 4, 7}`
@@ -147,7 +113,3 @@ Sau đó chương trình chia `Z` thành hai phần để hiển thị:
 * **Giải thích:**
   - Khi so sánh, các phần tử trùng nhau được giữ lại theo thứ tự từ `X` và `Y`.
   - Thuật toán merge vẫn hoạt động đúng với các giá trị lặp lại.
-
-## Kết luận
-
-Thuật toán merge hai mảng đã sắp xếp trong bài này dựa trên phương pháp kết hợp hai mảng theo từng cặp phần tử nhỏ hơn, tương tự thuật toán Merge Sort. Đây là cách tiếp cận đơn giản, hiệu quả và dễ hiểu, phù hợp cho việc ghép hai mảng tăng dần mà không cần phải sắp xếp lại toàn bộ mảng từ đầu.
