@@ -1,4 +1,4 @@
-# Bài toán: Rearrange the array with alternate high and low elements
+# Bài toán: Sắp xếp mảng sao cho các phần tử cao và thấp xen kẽ nhau (Rearrange the array with alternate high and low elements)
 
 ## 1. Mô tả giải thuật chi tiết
 
@@ -10,7 +10,7 @@ Chương trình sử dụng phương pháp duyệt qua các vị trí lẻ của
 
 * **Hàm `rearrange_array(int num[], int n)`**:
   * Duyệt theo các vị trí `i` lẻ: `i = 1, 3, 5, ...`.
-  * Ở mỗi lần lặp, chương trình thực hiện hai bước ki���m tra:
+  * Ở mỗi lần lặp, chương trình thực hiện hai bước kiểm tra:
 
     * Nếu `num[i] < num[i - 1]`, nghĩa là phần tử ở vị trí `i` nhỏ hơn phần tử bên trái, thì đổi chỗ hai phần tử này để đặt phần tử lớn hơn ở vị trí `i`.
     * Nếu `i + 1 < n` và `num[i] < num[i + 1]`, nghĩa là phần tử hiện tại nhỏ hơn phần tử bên phải, thì đổi chỗ để phần tử lớn hơn nằm ở vị trí `i`.
@@ -60,17 +60,7 @@ Như vậy, thuật toán sẽ thực hiện các phép hoán đổi trong phạ
 
   Giải thích: Khi duyệt tại `i = 1`, phần tử `3` nhỏ hơn `5` nên đổi chỗ hai giá trị. Sau đó, thuật toán tiếp tục kiểm tra các vị trí liên quan để giữ cấu trúc xen kẽ theo hướng phù hợp.
 
-### Test Case 3: Mảng có nhiều giá trị lớn và nhỏ xen kẽ
-* **Đầu vào (Input):**
-  * Mảng `nums`: `4, 1, 3, 2, 5`
-* **Đầu ra (Output):**
-  ```text
-  Output: { 1, 4, 5, 3, 2 }
-  ```
-
-  Giải thích: Thuật toán xét từng phần tử ở vị trí lẻ và thực hiện hoán đổi khi cần thiết để đưa các giá trị lớn và nhỏ vào vị trí tương ứng. Kết quả cuối cùng là mảng đã được điều chỉnh theo cấu trúc cần thiết.
-
-### Test Case 4: Mảng có số lượng chẵn
+### Test Case 3: Mảng có số lượng chẵn
 * **Đầu vào (Input):**
   * Mảng `nums`: `9, 1, 8, 2, 7, 3`
 * **Đầu ra (Output):**
