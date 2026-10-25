@@ -75,7 +75,7 @@ Mỗi lần xét một phần tử, thuật toán sẽ đưa nó về đúng vù
 
   Giải thích: Mảng đã ở trạng thái đúng nên thuật toán không cần thay đổi nhiều, chỉ duyệt qua và giữ nguyên.
 
-### Test Case 3: Mảng chỉ chứa số 0
+### Test Case 3: Mảng chỉ chứa số 0 hoặc 1 hoặc 2
 * **Đầu vào (Input):**
   * Mảng `A`: `0, 0, 0, 0, 0`
 * **Đầu ra (Output):**
@@ -85,25 +85,7 @@ Mỗi lần xét một phần tử, thuật toán sẽ đưa nó về đúng vù
 
   Giải thích: Tất cả các phần tử đều là `0`, nên sau khi sắp xếp, mảng vẫn giữ nguyên.
 
-### Test Case 4: Mảng chỉ chứa số 2
-* **Đầu vào (Input):**
-  * Mảng `A`: `2, 2, 2, 2`
-* **Đầu ra (Output):**
-  ```text
-  { 2, 2, 2, 2 }
-  ```
 
-  Giải thích: Tất cả các phần tử đều là `2`, nên mảng vẫn giữ nguyên vì mọi phần tử đã ở đúng vị trí cuối.
-
-### Test Case 5: Mảng chứa các giá trị phân tán
-* **Đầu vào (Input):**
-  * Mảng `A`: `2, 0, 1, 2, 1, 0, 2, 1, 0`
-* **Đầu ra (Output):**
-  ```text
-  { 0, 0, 0, 1, 1, 1, 2, 2, 2 }
-  ```
-
-  Giải thích: Đây là trường hợp điển hình của bài toán Dutch National Flag, nơi các phần tử được sắp xếp thành ba nhóm liên tiếp.
 
 
 
