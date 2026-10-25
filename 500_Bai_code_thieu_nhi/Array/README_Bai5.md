@@ -92,5 +92,4 @@ Với mỗi khoảng bắt đầu `i`, chương trình kiểm tra mọi khoảng
 
   Giải thích: Không có khoảng con nào trong mảng này có tổng bằng `11`, do đó chương trình sẽ báo không tìm thấy và in ra mảng con dài nhất rỗng với độ dài bằng `0`.
 
-## Tổng kết
-Bài toán này giúp tìm tất cả các mảng con có tổng bằng một giá trị cho trước, đồng thời xác định mảng con dài nhất thỏa mãn điều kiện. Phương pháp duyệt vét cạn là cách đơn giản và dễ hiểu nhất, phù hợp với các bài tập cơ bản về mảng và tổng con.
+
