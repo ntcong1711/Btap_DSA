@@ -105,20 +105,4 @@ Với mỗi đoạn, chương trình đếm số lượng số 0 và số 1, n�
   Giải thích:
   * Mảng này chỉ chứa số 1, không có số 0 nào, nên không thể tìm được đoạn con có số lượng số 0 bằng số lượng số 1.
 
-### Test Case 4: Có mảng con dài nhất với nhiều giá trị bằng nhau
 
-* Đầu vào (Input):
-  * Mảng `nums`: `0, 1, 1, 0, 0, 1`
-
-* Đầu ra (Output):
-  ```text
-  Largest subarray is {0, 1, 1, 0} having length 4
-  ```
-
-  Giải thích:
-  * Mảng con `{0, 1, 1, 0}` có 2 số 0 và 2 số 1.
-  * Đây là đoạn dài nhất thỏa mãn điều kiện trong mảng.
-
----
-
-Bài toán này giúp rèn luyện tư duy về việc duyệt tất cả các đoạn con liên tiếp và theo dõi số lượng phần tử trong từng đoạn để tìm ra mảng con có tính chất đặc biệt.
